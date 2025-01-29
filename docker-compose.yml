@@ -1,0 +1,11 @@
+version: '3'
+services:
+  reddit-keywords-discord-notifier:
+    container_name: rkdn
+    image: capwater4/reddit-keywords-discord-notifier
+    environment:
+      - DISCORD_TOKEN=your_discord_token
+      - REDDIT_CLIENT_ID=your_client_id
+      - REDDIT_CLIENT_SECRET=your_client_secret
+      - REDDIT_USER_AGENT=your_user_agent
+      - CHANNEL_ID=your_channel_id
