@@ -1,0 +1,12 @@
+services:
+  reddit-keywords-discord-notifier:
+    container_name: rkdn
+    image: capwater4/rkdn
+    environment:
+      - DISCORD_TOKEN="yourtoken"
+      - REDDIT_CLIENT_ID="yourid"
+      - REDDIT_CLIENT_SECRET="yoursecret"
+      - REDDIT_USER_AGENT="youragent"
+      - CHANNEL_ID="yourid"
+      - MONITOR_SUB="subreddit" #no r/, just the name
+      - KEYWORDS="list, of, keywords"
