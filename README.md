@@ -4,13 +4,13 @@ A discord bot that monitors a subreddit of your choosing and messages a discord 
 
 ## Setup
 1. Create a script at https://old.reddit.com/prefs/apps to get your API Key and Client
-   * Client_ID is under "personal use script", Client_Secret = secret
-2. Create a discord channel and copy the channel ID
+   * ```Client_ID``` is under "personal use script", ```Client_Secret``` = secret
+2. Create a discord channel and copy the ```channel ID```
    * If you don't see the copy channel id right click option, you need to enable dev mode 
 3. Create a discord bot and add to your channel with message privileges and message content intentions
    * https://discord.com/developers/applications > new application
-   * Copy your token (discord_token) or generate/copy a new one in the bot menu
-   * Navigate to bot > priveleged gateway intents and check ```Message Content Intent```
+   * Copy your token ```discord_token``` or generate/copy a new one in the bot menu
+   * Navigate to bot > priveleged gateway intents and check Message Content Intent
    * Then go to OAuth2 > URL generator select bot scope > bot permissions send messages > guild install
    * Paste your generated URL and add your bot to your server. Make sure it can access your designated channel
 
