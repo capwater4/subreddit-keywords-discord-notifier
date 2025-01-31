@@ -5,8 +5,8 @@ A discord bot that monitors a subreddit of your choosing and messages a discord 
 ## Setup
 1. Create a script at https://old.reddit.com/prefs/apps to get your API Key and Client
    * ```Client_ID``` is under "personal use script", ```Client_Secret``` = secret
-2. Create a discord channel and copy the ```channel ID```
-   * If you don't see the copy channel id right click option, you need to enable dev mode 
+2. Create a discord channel and right click it to copy the ```Channel_ID```
+   * If you don't see the copy channel id option, you need to enable dev mode 
 3. Create a discord bot and add to your channel with message privileges and message content intentions
    * https://discord.com/developers/applications > new application
    * Copy your token ```discord_token``` or generate/copy a new one in the bot menu
@@ -26,7 +26,7 @@ These are the variables you will need to run the script:
       - MONITOR_SUB="subreddit" #no r/, just the name
       - KEYWORDS="list, of, keywords"
 ```
-User agent: ```<platform>:<app ID>:<version string> (by u/<Reddit username>)``` 
+User_Agent: ```<platform>:<app ID>:<version string> (by u/<Reddit username>)``` 
 * For example, ```android:com.example.myredditapp:v1.2.3 (by u/kemitche)```
 
 
