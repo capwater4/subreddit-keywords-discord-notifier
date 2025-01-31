@@ -2,6 +2,16 @@
 
 A discord bot that monitors a subreddit of your choosing and messages a discord channel whenever a new post with your keywords is found. Uses free OAUTH Reddit API token and asyncio with discord bots.
 
+## Setup
+1. Create a script at https://old.reddit.com/prefs/apps to get your API Key and Client
+   * Client_ID is under "personal use script", Client_Secret = secret
+2. Create a discord channel and copy the channel ID
+   * If you don't see the copy channel id right click option, you need to enable dev mode 
+3. Create a discord bot with message privileges and message content intentions
+   * https://discord.com/developers/applications > new application > bot > priveleged gateway intents
+   * Then go to OAuth2 > URL generator select bot scope > bot permissions send messages > guild install
+   * Paste your generated URL and add your bot to your server. Make sure it can access your designated channel
+
 ## Environment
 These are the variables you will need to run the script:
 ```yml
@@ -14,17 +24,9 @@ These are the variables you will need to run the script:
       - MONITOR_SUB="subreddit" #no r/, just the name
       - KEYWORDS="list, of, keywords"
 ```
-User agent: 
+User agent: ```<platform>:<app ID>:<version string> (by u/<Reddit username>)``` 
+* ```For example, android:com.example.myredditapp:v1.2.3 (by u/kemitche)```
 
-## Setup
-1. Create a script at https://old.reddit.com/prefs/apps to get your API Key and Client
-   * Client_ID is under "personal use script", Client_Secret = secret
-2. Create a discord channel and copy the channel ID
-   * If you don't see the copy channel id right click option, you need to enable dev mode 
-3. Create a discord bot with message privileges and message content intentions
-   * https://discord.com/developers/applications > new application > bot > priveleged gateway intents
-   * Then go to OAuth2 > URL generator select bot scope > bot permissions send messages > guild install
-   * Paste your generated URL and add your bot to your server. Make sure it can access your designated channel
 
 ## Installation
 There are 3 ways of running the service:
@@ -41,7 +43,7 @@ Download all files above into 1 directory. You will need to point to .env file a
 ### Python Script
 Uses python 3.13, modules needed are in requirements.txt
 
-##Usage
+## Usage
 * Every 60 seconds, the script will check the 10 most recent posts from your subreddit for keywords
 * When it finds a matching post, your discord bot will post the title + URL for the post
 * Create a new instance of the script for every additional subreddit you want to monitor
