@@ -2,6 +2,20 @@
 
 A discord bot that monitors a subreddit of your choosing and messages a discord channel whenever a new post with your keywords is found. Uses free OAUTH Reddit API token and asyncio with discord bots.
 
+## Environment
+These are the variables you will need to run the script:
+```yml
+    environment:
+      - DISCORD_TOKEN="yourtoken"
+      - REDDIT_CLIENT_ID="yourid"
+      - REDDIT_CLIENT_SECRET="yoursecret"
+      - REDDIT_USER_AGENT="youragent"
+      - CHANNEL_ID="yourid"
+      - MONITOR_SUB="subreddit" #no r/, just the name
+      - KEYWORDS="list, of, keywords"
+```
+User agent: 
+
 ## Setup
 1. Create a script at https://old.reddit.com/prefs/apps to get your API Key and Client
    * Client_ID is under "personal use script", Client_Secret = secret
