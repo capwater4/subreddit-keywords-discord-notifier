@@ -21,8 +21,8 @@ There are 3 ways of running the service:
 ### Docker Compose
 Run the above compose file and fill in the environment variables. That's it!
 
-### Building Docker Locally
-Download all files above into 1 directory. You will need to point to .env file and fill in the same variables in your run command. 
+~~### Building Docker Locally
+Download all files above into 1 directory. You will need to point to .env file and fill in the same variables in your run command.~~ 
 
 ### Python Script
 Uses python 3.13, modules needed are in requirements.txt
