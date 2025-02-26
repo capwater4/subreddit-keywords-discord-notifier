@@ -49,7 +49,7 @@ Download all files above into 1 directory. You will need to point to .env file a
 _Make sure to uncomment the load_dotenv() line in python to load local .env file._
 
 ### Python Script
-Uses python 3.13, modules needed are in requirements.txt.
+Uses python 3.13, replace environment variables with your values. 
 
 ## Usage
 * By deafult, every 60 seconds the script will check the 10 most recent posts from your subreddit for keywords
