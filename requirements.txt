@@ -2,4 +2,3 @@ discord.py
 asyncpraw
 nest_asyncio
 python-dotenv
-os
